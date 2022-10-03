@@ -3,49 +3,56 @@
 body {
     max-width: 90%;
     margin: 4rem;
-    background-image: /* url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Marmota_marmota_Tauerntal_20220816_07.jpg/1024px-Marmota_marmota_Tauerntal_20220816_07.jpg),  */linear-gradient(-25deg, rgb(22, 135, 237), rgb(20, 55, 90));
+    background-image: /* url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Marmota_marmota_Tauerntal_20220816_07.jpg/1024px-Marmota_marmota_Tauerntal_20220816_07.jpg),  */linear-gradient(-25deg, rgb(22, 135, 237), rgb(221, 221, 221));
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
     font-family: 'Open Sans';
 }
 
-img {
-    float: left;
-    margin: 4em 4em 4em 10em;
+h1 a {
+    color: #000;
+    text-decoration: none;
 }
 
-p:first-of-type {
+a, a:visited {
+    color: #FFF;
+}
+a:hover {
+    color:rgb(253, 16, 16);
+}
+
+img {
+    float: left;
+    margin: 0 4em 0 2em;
+    width: 300px;
+}
+
+p:first-child {
     font-weight: bold;
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgb(0, 5, 36);
 }
 
-blockquote {
-    width: 50%;
-    margin: 0 20em;
-}
-blockquote p {
-    margin: 80px 0;
-}
-
-q { 
-    font-size: 1.6em;
-    border-left: solid 3px brown;
-    padding-left: 30px;
-    margin: 80px 0; 
-}
-
 blockquote, q {
-    background-color:rgb(233, 233, 233);
+    display: inline-block;
     font-style: italic;
+    font-size: 1.6em;
+    border-left: dashed 3px;
+    padding-left: 30px;
+    margin: 0 5em 0 0;
+    background-color:rgb(233, 233, 233);
+    width: 90%;
 }
-
+q { 
+    display: inline-block;
+    margin: 80px 5em 80px 0;
+}
 .villager {
     border-color:rgb(22, 135, 237)
 }
@@ -58,7 +65,7 @@ header h1 {
 }
 
 .good, .bad {
-    text-transform: capitalize;
+    text-transform:uppercase;
 }
 
 .good {
@@ -68,10 +75,23 @@ header h1 {
     color: red;
 }
 
-table tr:nth-child(odd) td{
+table tr:nth-child(odd) td, th{
     background-color: #FFF;
 }
 
-table tr:nth-child(even) td{
+table tr:nth-child(even) td,     th{
     background-color: #777;
+}
+
+.notification{
+    background:#FFFFDD;
+    padding:.5rem 1rem;
+    border:3px solid #DDDDCC;
+    width:250px;
+    font-weight:bold;
+    color: #333300;
+    float: right;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
 }
