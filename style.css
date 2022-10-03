@@ -1,9 +1,4 @@
-p {
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-    color: rgb(0, 5, 36);
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Outfit&display=swap');
 
 body {
     max-width: 90%;
@@ -12,11 +7,31 @@ body {
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
+    font-family: 'Open Sans';
+}
+
+img {
+    float: left;
+    margin: 4em 4em 4em 10em;
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    color: rgb(0, 5, 36);
 }
 
 blockquote {
     width: 50%;
     margin: 0 20em;
+}
+blockquote p {
+    margin: 80px 0;
 }
 
 q { 
